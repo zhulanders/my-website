@@ -2,7 +2,7 @@ import { workExperiences } from "../constants/index.js";
 import React from "react";
 const Experience = () =>{
     return(
-        <section className="c-space my-20">
+        <section id="experience" className="c-space my-20">
             <div className="w-full text-white-600 flex flex-col items-center">
                 <h3 className="head-text">My Experience</h3>
                 <div className="work-container flex justify-center items-center">

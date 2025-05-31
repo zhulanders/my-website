@@ -15,107 +15,84 @@ export const navLinks = [
     href: '#projects',
   },
   {
+    id:4,
+    name: 'Experience',
+    href: '#experience',
+  },
+  {
     id: 4,
     name: 'Contact',
     href: '#contact',
   },
 ];
 
-export const clientReviews = [
-  {
-    id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
-    review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-  },
-  {
-    id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
-    review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-  },
-  {
-    id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
-    review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-  },
-  {
-    id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
-    review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-  },
-];
-
 export const myProjects = [
   {
-    title: 'Mock Meal Planning Webapp/Database',
-    desc: 'Co-developed a full-stack web app with mock data to enable meal planning with dietary and cost constraints, improving decision-making for budget-conscious users.',
-    subdesc: 'Designed and implemented secure SQLAlchemy/MySQL queries to handle user meal preferences and constraints, ensuring reliable data storage and fast retrieval for dynamic filtering.',
-    href: '', // add link if you have one
+    title: 'Mock Meal Planning Webapp',
+    image: 'assets/meal.png',
+    desc: 'With other students, I co-developed an application with mock data to help a user plan meals!',
+
+    github: 'https://github.com/zhulanders/meal-plan-app', // add link if you have one
     tags: [
-      { id: 1, name: 'React', path: '' },
-      { id: 2, name: 'Python', path: '' },
-      { id: 3, name: 'JavaScript', path: '' },
-      { id: 4, name: 'MySQL', path: '' },
-      { id: 5, name: 'Git', path: '' },
+      { id: 1, name: 'React', path: 'assets/react.svg' },
+      { id: 2, name: 'Python', path: 'assets/python.svg' },
+      { id: 3, name: 'JavaScript', path: 'assets/js.svg' },
+      { id: 4, name: 'MySQL', path: 'assets/sql.png' },
+      { id: 5, name: 'Tailwind', path: 'assets/tailwindcss.png' }
     ],
   },
   {
     title: 'Browser Based Chip-8 Emulator',
-    desc: 'Implemented 35 opcodes that display to HTML5 Canvas to play retro games like Pong and Snake.',
-    subdesc: 'Designed a responsive UI with adjustable emulation speed and RGB color sliders, improving user experience through customization.',
-    href: '',
+    image: 'assets/chip8.png',
+    desc: 'This is a fully functional emulator that runs roms directly in the browser! ',
+    github: 'https://github.com/zhulanders/chip-8',
     tags: [
-      { id: 1, name: 'HTML', path: '' },
-      { id: 2, name: 'CSS', path: '' },
-      { id: 3, name: 'JavaScript', path: '' },
-      { id: 4, name: 'npm', path: '' },
-      { id: 5, name: 'Webpack', path: '' },
+      { id: 1, name: 'HTML', path: 'assets/html.svg' },
+      { id: 2, name: 'CSS', path: 'assets/css.svg' },
+      { id: 3, name: 'JavaScript', path: 'assets/js.svg' },
+      { id: 5, name: 'Webpack', path: 'assets/webpack.svg' },
     ],
   },
   {
     title: 'Procedural Terrain Simulator',
-    desc: 'Developed a real-time procedural terrain generation simulator using WebGL and GLSL shaders, enabling dynamic and visually rich 3D landscapes.',
-    subdesc: 'Implemented a flight-style camera system for smooth navigation and exploration of the generated terrain, enhancing user interaction and immersion.',
-    href: '',
+    image: 'assets/terrain.png',
+    desc: "Here's a simulator using WebGL that generates a realistic terrain based on a variable fault and weathering input!",
+    github: 'https://github.com/zhulanders/terrain-sim',
     tags: [
-      { id: 1, name: 'WebGL', path: '' },
-      { id: 2, name: 'JavaScript', path: '' },
-      { id: 3, name: 'GLSL', path: '' },
+      { id: 1, name: 'WebGL', path: 'assets/webgl.svg' },
+      { id: 2, name: 'JavaScript', path: 'assets/js.svg' },
+  
+    ],
+  },
+    {
+    title: 'Checkout my journey on the Odin Project!',
+    image: 'assets/odin.png',
+    desc: "Here's a collection of projects/lessons I did learning the foundations of full-stack development for TOP!",
+    github: 'https://github.com/orgs/zhulander-top/repositories',
+    tags: [{ id: 1, name: 'HTML', path: 'assets/html.svg' },
+      { id: 2, name: 'CSS', path: 'assets/css.svg' },
+      { id: 3, name: 'JavaScript', path: 'assets/js.svg' },
+      { id: 5, name: 'Webpack', path: 'assets/webpack.svg' },
     ],
   },
   {
     title: 'RISC-V Out-of-Order Processor',
-    desc: 'Designed a high-performance out-of-order RISC-V processor with branch prediction and caching, increasing throughput by reducing stalls.',
-    subdesc: 'Validated processor modules with comprehensive testbenches, ensuring reliable instruction execution.',
-    href: '',
+    image: 'assets/ooo.png',
+    desc: 'I worked with other students to develop a RISC-V processor that performs instructions out-of-order to reduce stalls, placing in the top half of groups!',
+    github: '',
     tags: [
-      { id: 1, name: 'SystemVerilog', path: '' },
-      { id: 2, name: 'Hardware Verification', path: '' },
-      { id: 3, name: 'FPGA', path: '' },
+      { id: 1, name: 'SystemVerilog', path: 'assets/systemverilog.svg' },
     ],
   },
   {
     title: 'Linux Operating System',
-    desc: 'Developed a Linux-based OS from scratch in x86 assembly and C, providing paging and scheduling functionalities.',
-    subdesc: 'Created a user interface supporting core OS features, facilitating process and memory management.',
-    href: '',
+    image: 'assets/os.png',
+    desc: 'I developed a Linux-based OS from scratch in x86 assembly and C, with paging and scheduling functionalities!',
+    github: '',
     tags: [
-      { id: 1, name: 'C', path: '' },
-      { id: 2, name: 'x86', path: '' },
-      { id: 3, name: 'Linux/Unix', path: '' },
-      { id: 4, name: 'gdb', path: '' },
-      { id: 5, name: 'git', path: '' },
+      { id: 1, name: 'C', path: 'assets/c.svg' },
+      { id: 2, name: 'x86', path: 'assets/x86.png' },
+      { id: 3, name: 'Linux/Unix', path: 'assets/linux.webp' },
     ],
   },
 ];

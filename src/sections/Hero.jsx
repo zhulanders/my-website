@@ -18,9 +18,9 @@ const Hero = () => {
     const isMobile = useMediaQuery({minWidth:425 ,maxWidth:766});
     const isTablet = useMediaQuery({minWidth:767, maxWidth:1023});
     const sizes = calculateSizes(isSmall, isMobile, isTablet)
-    console.log("Ring Position:", sizes.ringPosition);
+
     return(
-        <section className='min-h-screen w-full flex-col relative'>
+        <section id="home" className='min-h-screen w-full flex-col relative'>
                 <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3'>
                     <p className='sm:text-3xl text-2xl font-medium text-white text-center font-generalsans'>Hi, I'm Joshua <span className="waving-hand">👋</span></p>
                     <p className="hero_tag text-gray_gradient">Building from Frontend to FPGA</p>
